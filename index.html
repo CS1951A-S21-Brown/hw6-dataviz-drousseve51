@@ -12,17 +12,54 @@
     <div class="header">
         <h3>Assignment 6 &laquo; Data Visualization Dashboard &raquo;</h3>
     </div>
-    <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
+
     <div class="row">
         <div class="col-lg-6">
-            <div id="graph1"></div>
-            <div id="graph2"></div><br/>
+            <div id="graph1"></div><br/>
+            <div id="graph2"></div>
         </div>
         <div class="col-lg-6">
+            <div class="genre-controls">
+                <button onclick="prevGenre()" class="genre-button">Prev Genre</button>
+                <button onclick="nextGenre()" class="genre-button">Next Genre</button>
+            </div>
             <div id="graph3"></div>
+            <p style="font-size: 12px;">&nbsp *A popular actor is one who appears in 12 or more total pairs, and appears in 5 or more pairs within the genre.</p>
         </div>
     </div>
+    <br>
+    <p style="font-size: 14px; margin-left: 50px;">Written Questions: <br>
+        1. I answered question 1 by showing the number of titles per genre in a bar graph, focusing on the top 15 genres.
+        I answered question 2 by showing the median runtimes of movies per year in a box and whisker plot. I answered
+        question 3 by showing a network graph of actors, with links referring to movies and shows that the actors starred in together.<br>
+        2. D3 was really helpful in creating the scales for the x and y axes of my graphs, for calculating the quartiles
+        used in the box and whisker plot, and for creating the force directed graph of actors.<br>
+        3. D3 can be a bad tool for visualization because it can be more complicated/complex than necessary for simple
+        visualizations. It also requires very specific data structuring to create some of the more complex graphs,
+        making it difficult to debug. D3 also can't load multiple datasets at once, so preprocessing/joining has to be
+        done before working with it.<br>
+        4. My dashboard is easily accessible for people without difficulties seeing, and for people who use the keyboard
+        and mouse in a traditional way. It is less accessible for people who are blind, or potentially those with epilepsy.
+        Why Accessibility is at the Heart of Data Visualization states: "If you’re using animation, factor in people
+        with epilepsy, ADHD, or cognitive disabilities, and give the user control of the animation." One action I could
+        take to put this idea into action would be to allow the user to control the animation of the network graph, or
+        even access an alternative representation of the data. I could also change the color scheme of the moving parts
+        of the animation, to lessen the visual strain that could create problems for people with epilepsy.<br>
+        5. I could have added more control to the animation, or even given the data nodes the appropriate tags so that
+        they could be 'tabbed' through, but due to my inexperience with Javascript and D3, I didn't know how to build in
+        these accessibility features. With more experience, I believe I could have implemented these ideas and the ones
+        I mentioned in question 4. Additionally, my initial and primary focus was providing an interesting representation of the data
+        rather than ensuring that the representation was open to everyone; by changing this focus, or placing the same
+        importance on them, I could create better, more accessible data visualizations.<br>
+        Stats Extra Credit: I made a box and whisker plot for the average runtimes of movies by year graph, this is statistical
+        because it shows the median, maximum, minimum, and quartiles for the data. <br>
+        Flow Extra Credit: I made a force directed network graph of actors, with links representing titles shared between
+        pairs of actors.
+    </p>
     <!--Feel free to add more JavaScript files as needed-->
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="graph_titles.js"></script>
+    <script type="text/javascript" src="graph_runtime.js"></script>
+    <script type="text/javascript" src="graph_flow.js"></script>
 </body>
 </html>

@@ -10,3 +10,95 @@
 }
 
 /* Include any custom CSS styling here! */
+
+body {
+  background-color: #fffbee;
+}
+
+.genre-button {
+  background-color: #96ceb4;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.genre-button:hover, .genre-button:focus {
+  background-color: #b9decd;
+}
+
+
+.genre-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px
+}
+
+.genre-controls > button {
+    margin: 0 50px;
+}
+
+.num-actors-button {
+  background-color: #96ceb4;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.num-actors-submit > button {
+    margin: 0 5px;
+}
+
+.num-actors-button:hover, .num-actors-button:focus {
+  background-color: #b9decd;
+}
+
+.num-actors-text {
+  background-color: white;
+  color: #96ceb4;
+  border-radius: 5px;
+  border-color: #96ceb4;
+  box-shadow: none;
+  padding: 16px;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    font-size: 15px;
+    min-width: 120px;
+    padding: 15px;
+    pointer-events: none;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.y-axis {
+    fill: none;
+    stroke: "light-grey";
+}
+.x-axis {
+    fill: none;
+    color: "white";
+    stroke: "white";
+}
+
+.links line {
+    stroke: #ccc;
+    stroke-opacity: 0.6;
+}
+
+.nodes circle {
+    stroke: #fff;
+    stroke-width: 0.8px;
+}
+
