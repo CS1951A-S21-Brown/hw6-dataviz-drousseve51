@@ -36,7 +36,7 @@ let mouseout2 = function(d) {
 };
 
 //load data
-d3.csv('../data/netflix_runtimes.csv').then(function(data)  {
+d3.csv('./data/netflix_runtimes.csv').then(function(data)  {
     //convert runtimes and years to ints
     data = convertToInt(data)
 
