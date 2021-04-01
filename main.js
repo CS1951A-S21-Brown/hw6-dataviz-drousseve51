@@ -35,7 +35,7 @@ let tooltip = d3.select("body")
     .style("opacity", 0);
 
 //load data, update network
-d3.csv('../data/netflix_pairs.csv').then(function(d) {
+d3.csv('./data/netflix_pairs.csv').then(function(d) {
     data = d;
     updateDashboard();
 });
