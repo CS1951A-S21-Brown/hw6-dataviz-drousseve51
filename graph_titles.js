@@ -29,7 +29,7 @@ let mouseout = function(d) {
 };
 
 //load data
-d3.csv('../data/netflix_counts.csv').then(function(data) {
+d3.csv('./data/netflix_counts.csv').then(function(data) {
 
     //parse ints, sort data, and grab NUM_EXAMPLES with highest counts
     data = get_highest(data, NUM_EXAMPLES);
